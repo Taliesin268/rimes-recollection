@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("Rimes Recollection")
+define config.name = _("Rime's Recollection")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -30,6 +30,7 @@ define config.version = "1.0"
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
+Chronicles of our D&D campaign adventures, session by session.
 """)
 
 
