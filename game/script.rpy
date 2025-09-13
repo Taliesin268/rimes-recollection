@@ -1,65 +1,33 @@
-# The script of the game goes in this file.
+﻿# The script of the game goes in this file.
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-# Define main party members - adjust names and colors as needed
-define dm = Character("DM", color="#c8ffc8")
-define narrator = Character(None, kind=nvl)
+define e = Character("Eileen")
 
-# Add your party members here - example characters:
-define pc1 = Character("Character 1", color="#c8c8ff")
-define pc2 = Character("Character 2", color="#ffc8c8")
-define pc3 = Character("Character 3", color="#ffffc8")
-define pc4 = Character("Character 4", color="#ffc8ff")
 
 # The game starts here.
+
 label start:
 
-    scene bg tavern
-    with fade
+    # Show a background. This uses a placeholder by default, but you can
+    # add a file (named either "bg room.png" or "bg room.jpg") to the
+    # images directory to show it.
 
-    "Welcome to the chronicles of our D&D adventures!"
+    scene bg room
 
-    "This visual novel will document the epic tales of our party's journey through mysterious lands, dangerous dungeons, and unforgettable encounters."
+    # This shows a character sprite. A placeholder is used, but you can
+    # replace it by adding a file named "eileen happy.png" to the images
+    # directory.
 
-    dm "Gather 'round, adventurers. Our tale begins in a bustling tavern where fate would bring together an unlikely group of heroes..."
+    show eileen happy
 
-    "Session 1 will be added here..."
+    # These display lines of dialogue.
 
-    # Placeholder menu for navigation
-    menu:
-        "Begin Session 1":
-            jump session1
+    e "You've created a new Ren'Py game."
 
-        "Character Backgrounds":
-            jump character_backgrounds
+    e "Once you add a story, pictures, and music, you can release it to the world!"
 
-        "Settings":
-            jump preferences
+    # This ends the game.
 
     return
-
-# Session 1 content placeholder
-label session1:
-    scene bg forest
-    with dissolve
-
-    dm "Your first adventure begins as you leave the safety of the town and venture into the Whispering Woods..."
-
-    "To be continued..."
-
-    return
-
-# Character backgrounds placeholder
-label character_backgrounds:
-    "Here you can learn about each party member's backstory and motivations."
-
-    # Add character introductions here
-
-    jump start
-
-# Jump to Ren'Py's built-in preferences screen
-label preferences:
-    call screen preferences
-    jump start

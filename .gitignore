@@ -1,28 +1,34 @@
-# Ren'Py specific files
+# Ren'Py compiled files
 *.rpyc
 *.rpymc
 *.rpyb
+*.pyc
+*.pyo
+
+# Ren'Py temporary and backup files
 *~
 *.bak
 *.orig
 *.tmp
-*.pyc
-*.pyo
-*.DS_Store
-.directory
 
 # Ren'Py build output
 /build/
 /dist/
 
-# Ren'Py cache and temporary files
+# Ren'Py runtime files (generated during play/testing)
 game/cache/
 game/saves/
 game/persistent
-game/gui.rpyc
+game/firstrun
+
+# Ren'Py logs and error files
 game/errors.txt
 game/traceback.txt
 game/log.txt
+*.log
+
+# Ren'Py auto-generated GUI files
+game/gui/*.rpyc
 
 # IDE and editor files
 .vscode/
@@ -39,6 +45,9 @@ game/log.txt
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Local tools (Ren'Py installation)
+tools/
 
 # Archive files
 *.7z
