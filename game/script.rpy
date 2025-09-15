@@ -2,14 +2,12 @@
 # Session 66: The Righteous Grove
 
 # Character Definitions
-define dm = Character("DM", color="#c8ffc8")
-define narrator = Character(None, color="#ffffff")
 
 # Party Characters
-define thrall = Character("Thrall", color="#8b4a9c")
+define thrall = Character("Thrall", color="#6b8e23")
 define granite = Character("Granite", color="#8b7355")
 define harold = Character("Harold", color="#4a90e2")
-define ronin = Character("Ronin", color="#cc5500")
+define ronin = Character("Ronin", color="#ffffe0")
 define rime = Character("Rime", color="#87ceeb")  # Echo Form
 
 # NPCs
@@ -47,17 +45,16 @@ label session_66:
     scene black
     with fade
 
-    "Session 66: The Righteous Grove"
-    "We return to our adventure at a celebration with the Reath. A feast is underway, and the party are trying their best to blend in."
+    "Session 66: The Righteous Grove" "We return to our adventure amidst a celebration with the Reath. Laughter and music fill the air as a feast is shared, and the party does their best to move in harmony rather than risk discord."
 
     jump session66_scene1
 
 # Scene 1: Reath Feast — Arrival & The Mouth
 label session66_scene1:
-    scene bg bonfire  
+    scene bg bonfire
     with dissolve
 
-    "Thrall asks the mouth who the oldest person in Reath is."
+    "Thrall asks the Mouth how old the people of this place are. The Mouth offers to introduce him to one of the elders."
 
     jump session66_scene2
 
@@ -66,16 +63,98 @@ label session66_scene2:
     scene bg forest_path
     with dissolve
 
-    "Thrall walks with The Mouth away from the music to find the Elder - meeting C'Cillian along the way."
+    "The music and laughter thin as they leave the celebration. A tent appears ahead, marked with ritual sigils, candles, incense, and wind-chimes."
+
+    "C'cillian — the one once invited into Thrall's lamp — stands guard, casually eating berries. Chains and whips hang on him like ornaments."
+
+    "C'cillian and the Mouth trade a few curious words in Reath that Thrall cannot understand. At the entrance, C'cillian gives Thrall a reassuring wink."
+
+    "Immaculate furs line the threshold, pristine as new snow. Thrall is told he must walk in the presence of the elder — any magic nearby could be dangerous."
+
+    "They undergo a more thorough cleansing than before, body and spirit both, then approach the flap."
+
+    mouth "Their name is Shallar. They will be pleased to meet you."
 
     jump session66_scene3
 
 # Scene 3: Elder's Chamber (first visit)
 label session66_scene3:
-    scene black 
+    scene black
     with dissolve
 
-    "Thrall meets the elder Shallar, who speaks through the Mouth."
+    "Inside: pillars, charcoal etchings, layered iconography. A shrine of tree-like supports cradles a loosely human head."
+
+    "Age droops every feature; bones knit together with the barest suggestion of a body, all of it clinging to a heart."
+
+    "As Thrall steps in, he hears the dry crunch of eyelids prying open."
+
+    thrall "How old are you?"
+
+    "The elder rasps. The Mouth leans close to read lips and translate."
+
+    mouth "Shallar is forty-eight years old."
+
+    thrall "Is she comfortable?"
+
+    mouth "She does not have the means to be uncomfortable."
+
+    thrall "Must be nice… Wow, Mister Mouth, this one's just for you. Is this getting worse for them?"
+
+    mouth "She will continue to worsen. This is what Rysen's bargain brought — to trade our bodies for our might."
+
+    thrall "Did your people agree?"
+
+    mouth "It has been the price of our safety and peace."
+
+    "Thrall watches, weighing whether the Mouth translates faithfully. The pause could be effort — or invention."
+
+    thrall "Mister Mouth — do you agree with the decision?"
+
+    mouth "I am the voice of Rysen. Of course. It was the only way to keep my children safe."
+
+    thrall "From what?"
+
+    mouth "From the other kingdoms."
+
+    mouth "We have chosen to remove ourselves from the struggle of power."
+
+    thrall "Is it reversible? If you wanted to?"
+
+    mouth "It was a pact with our gods, and thus it would only be changeable should the gods decide."
+
+    thrall "If the rest of the world became friends, would you reverse this?"
+
+    mouth "If I were to rule Miltaur, the gods would see fit to reverse it."
+
+    thrall "So, if the ruler of Reath ruled Miltaur, it would be reversed?"
+
+    mouth "If Miltaur were united, it would be reversed."
+
+    thrall "Do you like your gods?"
+
+    "Shallar stirs for the first time; with effort, remnants of muscle try to turn her head."
+
+    mouth "Shallar says the gods are. It is no matter of love or hate. You could no more hate the sun or the wind."
+
+    thrall "Why are the Reath gods different from the others?"
+
+    mouth "They are not. All gods are one. We worship them in a different form. The gods of Miltaur, of Zeterith, of the Serene Isles — they are the same. Known by different names, seen with different faces, worshipped in different ways."
+
+    thrall "I will go now. Tell Shallar I respect her greatly and want to help her."
+
+    "The Mouth translates. Shallar forces out a sound."
+
+    mouth "She asks that you stay a moment longer."
+
+    thrall "Did she want you to remain?"
+
+    mouth "No."
+
+    "The Mouth steps out and lets the curtain fall. Thrall lingers at the threshold, leaning in as Shallar gathers a final whisper."
+
+    shallar "Shar eular mialagra deshoon."
+
+    "Thrall wheels around and sprints back to the dance floor, the drums and firelight rushing up to meet him."
 
     jump session66_scene4
 
@@ -83,6 +162,14 @@ label session66_scene3:
 label session66_scene4:
     scene bg bonfire
     with dissolve
+
+    thrall "Shar eular mialagra deshoon! What does it mean?!"
+
+    rime "My flesh burns the gods."
+
+    rime "This is no passive devotion. It's an invocation — a call for the gods themselves to walk upon Miltaur."
+
+    "Thrall's Thoughts" "The tales said the Reath yielded their bodies for divine strength. But this sounds different: their flesh, their suffering, offered not merely as vessels… but as summoning."
 
     "One of the Reath cast a spell to light the bonfire, and dancing commences."
 
