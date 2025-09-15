@@ -58,3 +58,5 @@ tools/
 *.rar
 *.tar
 *.zip
+
+log.txt
